@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AW</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .header-logo {
+            max-height: 50px;
+        }
+        .images img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" class="navbar-brand">
+                <img src="./imagenes/logo.jpg" alt="Logo" class="header-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./pages/uniformes.html" class="nav-link">Uniformes</a></li>
+                    <li class="nav-item"><a href="./pages/egresados.html" class="nav-link">Egresados</a></li>
+                    <li class="nav-item"><a href="./pages/comentarios.html" class="nav-link">Comentarios</a></li>
+                    <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link">Nosotros</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <section class="promociones">
+            <h1 class="text-center mb-4">Promociones</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./imagenes/promo1.jpg" alt="Promo 1" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="./imagenes/promo2.jpg" alt="Promo 2" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="./imagenes/promo3.jpg" alt="Promo 3" class="img-fluid">
+                </div>
+            </div>
+        </section>
+    
+        <section class="destacados mt-5">
+            <h1 class="text-center mb-4">Destacados</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./imagenes/destacado1.jpg" alt="Destacado 1" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="./imagenes/destacado2.jpg" alt="Destacado 2" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="./imagenes/destacado3.jpg" alt="Destacado 3" class="img-fluid">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
