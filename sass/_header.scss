@@ -1,0 +1,43 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $secondary-color;
+    box-shadow: $box-shadow;
+    z-index: 1000;
+    padding: 10px $padding;
+
+    .header-logo {
+        max-height: 50px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-left: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $dark-color;
+                    padding: 8px 12px;
+                    border-radius: $border-radius;
+                    transition: background-color 0.3s, color 0.3s;
+
+                    &:hover {
+                        background-color: #ddd;
+                        color: $dark-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 70px; 
+    margin: 0;
+    background-color: $light-color;
+    line-height: 1.6;
+}
+
+main {
+    padding: $padding;
+    margin-top: $padding;
+}
+
+h1 {
+    text-align: center;
+    margin-top: $padding;
+    font-size: 2em;
+    color: $dark-color;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $padding;
+    justify-content: center;
+    padding: $padding;
+
+    img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: $border-radius;
+        padding: 5px;
+        transition: box-shadow 0.3s, transform 0.3s;
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.promociones, .destacados, .uniformes, .nosotros, .comentarios, .egresados {
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+    }
+}
