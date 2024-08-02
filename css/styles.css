@@ -1,164 +1,202 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffb388d8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+@font-face {
+  font-family: "Dosis-Bolt";
+  src: url(../assets/fonts/Dosis-Bold.ttf);
+}
+
+
+
+header .header-logo {
+  max-height: 50px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+header nav ul li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+footer p {
+  margin: 0;
+  color: #666;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    padding-top: 70px; 
-    margin: 0;
-    background-color: #f9f9f9;
-    line-height: 1.6;
+  font-family:"Dosis-Bolt" ;
+  padding-top: 70px;
+  margin: 0;
+  background-color: #c4a689;
+  line-height: 1.6;
 }
-
-
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    padding: 10px 20px;
-}
-
-.header-logo {
-    max-height: 50px;
-}
-.images img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-logo {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #ddd;
-    color: #000;
-}
-
 
 main {
-    padding: 20px;
-    margin-top: 20px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-
 h1 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2em;
-    color: #333;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  color: #333;
 }
 
 .images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
-
 .images img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    transition: box-shadow 0.3s, transform 0.3s;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
-
 .images img:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
-
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .col {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-
 .promociones, .destacados, .uniformes, .nosotros, .comentarios, .egresados {
-    margin-top: 50px;
-    
+  margin-top: 50px;
 }
 
 @media (max-width: 767px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .images {
-        grid-template-columns: 1fr;
-    }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .images {
+    grid-template-columns: 1fr;
+  }
+}
+.comentarios h1 {
+  color: #333;
+}
+.comentarios .row {
+  margin-top: 20px;
+}
+.comentarios .img-fluid {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.comentarios .img-fluid:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
-
-footer {
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+.egresados h1 {
+  color: #333;
+}
+.egresados .row {
+  margin-top: 20px;
+}
+.egresados .img-fluid {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.egresados .img-fluid:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
-footer p {
-    margin: 0;
-    color: #666;
+.nosotros h1 {
+  color: #333;
+}
+.nosotros .row {
+  margin-top: 20px;
+}
+.nosotros .img-fluid {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.nosotros .img-fluid:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
-
-a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
+.uniformes h1 {
+  color: #333;
+}
+.uniformes .row {
+  margin-top: 20px;
+}
+.uniformes .img-fluid {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.uniformes .img-fluid:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
-a:hover {
-    color: #0056b3;
-}
+/*# sourceMappingURL=styles.css.map */

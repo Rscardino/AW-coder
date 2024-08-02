@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+
     padding-top: 70px; 
     margin: 0;
     background-color: $light-color;
@@ -57,7 +57,9 @@ h1 {
 
 .promociones, .destacados, .uniformes, .nosotros, .comentarios, .egresados {
     margin-top: 50px;
+
 }
+
 
 @media (max-width: 767px) {
     nav ul {
