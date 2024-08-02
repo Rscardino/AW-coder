@@ -6,6 +6,18 @@
     .row {
         margin-top: $padding;
     }
+// Variables para el efecto de zoom
+$zoom-scale: 1.1; // Escala del zoom
+
+// Estilo base para las imágenes
+.img-zoom {
+  transition: transform 0.3s ease-in-out; // Transición suave para el efecto de zoom
+}
+
+// Efecto de zoom al pasar el cursor
+.img-zoom:hover {
+  transform: scale($zoom-scale);
+}
 
     .img-fluid {
         border: 1px solid #ddd;

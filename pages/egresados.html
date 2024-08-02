@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egresados</title>
+    <title>Buzos de Egresados - AW</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
     <header class="bg-light">
@@ -32,17 +31,72 @@
     </header>
     
     <main class="container mt-5">
-        <section class="egresados">
-            <h1 class="text-center mb-4">Egresados</h1>
+        <section class="buzos-egresados">
+            <h1 class="text-center mb-4">Buzos de Egresados de AW</h1>
+            <p class="text-center mb-4">En AW, fabricamos buzos personalizados para egresados con la mejor calidad y diseños exclusivos. Ideal para recordar tu gran día y mostrar tu orgullo.</p>
             <div class="row">
-                <div class="col-md-4 mb-3">
-                    <img src="../assets/img/egresados1.jpg" alt="Egresados 1" class="img-fluid">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../assets/img/egresados1.jpg" alt="Chomba de Egresado 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Chomba de Egresado</h5>
+                            <p class="card-text">Chomba de Egresado con bordado personalizado. Disponible en varios colores.</p>
+                            <a href="https://wa.me/5493413853725?text=Hola,%20estoy%20interesado%20en%20los%20buzos%20de%20egresados.%20¿Podrían%20darme%20más%20información?" class="btn btn-primary" target="_blank">Solicitar Información</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <img src="../assets/img/egresados2.jpg" alt="Egresados 2" class="img-fluid">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../assets/img/egresados2.jpg" alt="Buzo de Egresado 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Buzo Deportivo</h5>
+                            <p class="card-text">Buzo deportivo con impresión en serigrafía. Ideal para actividades y eventos.</p>
+                            <a href="https://wa.me/5493413853725?text=Hola,%20estoy%20interesado%20en%20los%20buzos%20de%20egresados.%20¿Podrían%20darme%20más%20información?" class="btn btn-primary" target="_blank">Solicitar Información</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <img src="../assets/img/egresados3.jpg" alt="Egresados 3" class="img-fluid">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../assets/img/egresados3.jpg" alt="Buzo de Egresado 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Buzo Premium</h5>
+                            <p class="card-text">Buzo de alta calidad con detalles bordados y opciones personalizadas.</p>
+                            <a href="https://wa.me/5493413853725?text=Hola,%20estoy%20interesado%20en%20los%20buzos%20de%20egresados.%20¿Podrían%20darme%20más%20información?" class="btn btn-primary" target="_blank">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-fabricacion mt-5">
+            <h2 class="text-center mb-4">Sobre Nuestra Fabricación</h2>
+            <p>En AW, nos enorgullecemos de nuestra capacidad para fabricar buzos de alta calidad. Utilizamos materiales duraderos y técnicas avanzadas de impresión y bordado para asegurar que cada buzo sea un producto premium que durará por años. Trabajamos con nuestros clientes para personalizar cada diseño y garantizar la máxima satisfacción.</p>
+        </section>
+
+        <section id="contacto" class="contacto mt-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <p class="text-center mb-4">Para más información o para realizar tu pedido, por favor completa el formulario de contacto o envíanos un correo electrónico.</p>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <form action="https://formspree.io/f/mrbzqywg" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Tu Correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tu Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <p><strong>Correo Electrónico:</strong> <a href="mailto:rominanntonella19@gmail.com">aw@gmail.com</a></p>
+              
                 </div>
             </div>
         </section>
